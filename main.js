@@ -13,8 +13,8 @@ function start ()
         speak();
     }
     function speak(){
-        var synth =window.speechsynthesis;
-        speak_data =document.getElementById("textbox").value;
+        var synth = window.speechsynthesis;
+        speak_data = document.getElementById("textbox").value;
         var utterThis = new SpeechSynthesisUtterance(speak_data);
         synth.speak(utterThis);
         Webcam.attach(camera);
